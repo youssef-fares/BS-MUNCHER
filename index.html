@@ -80,7 +80,7 @@
 </head>
 <body>
   <h1>🟡 BS MUNCHER 🟡</h1>
-  <div id="subtitle">Swallow every piece of corporate nonsense before Logic, Truth, or Humanity catch up with you.</div>
+  <div id="subtitle">Internalise every piece of corporate communication before Logic, Truth, or Humanity catch up with you.</div>
   <div id="gameWrapper">
     <canvas id="game" width="560" height="560"></canvas>
     <div id="message"></div>
@@ -101,9 +101,9 @@ const COLS = 16, ROWS = 16;
 // 1 = wall, 0 = open path with pellet, 2 = open path no pellet (spawn areas)
 const mapLayout = [
 "1111111111111111",
-"1000000110000001",
+"1000001110000001",
 "1010101110101101",
-"1010100000000101",
+"1010100000001101",
 "1010111011101101",
 "1000000000000001",
 "1110101101101011",
@@ -113,9 +113,9 @@ const mapLayout = [
 "1010111010111101",
 "1000000010111001",
 "1110111010111011",
-"1000001000000001",
-"1011101111101101",
 "1000000000000001",
+"1011101111101101",
+"1000001111100001",
 ];
 
 let grid = [];
@@ -160,7 +160,7 @@ let score = 0, lives = 3;
 let gameOver = false, won = false;
 let moveTimer = 0, ghostTimer = 0;
 const MOVE_INTERVAL = 220;
-const GHOST_INTERVAL = 340;
+const GHOST_INTERVAL = 380;
 
 document.addEventListener('keydown', e => {
   if (e.key === 'ArrowUp') player.nextDir = {r:-1,c:0};
