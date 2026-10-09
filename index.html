@@ -103,14 +103,14 @@ const mapLayout = [
 "1111111111111111",
 "1000000110000001",
 "1011101110111101",
-"1010001000100101",
-"1010111111101101",
+"1010010000100101",
+"1010111011101101",
 "1000100000010001",
-"1110101111101011",
+"1110101101101011",
 "1000101000101001",
 "1011101011101011",
 "1000001010000001",
-"1011111010111101",
+"1010111010101101",
 "1000100010001001",
 "1110111010111011",
 "1000001000010001",
@@ -310,7 +310,7 @@ function draw() {
   const btn = document.getElementById('restartBtn');
   if (gameOver && won) {
     msg.style.display = 'block';
-    msg.innerHTML = 'All the BS has been swallowed.<br><br>Logic, Truth and Humanity never caught up with you.<br><br>Final score: ' + score;
+    msg.innerHTML = 'Congratulations! <br><br>You have successfully internalised our corporate values. These are fundamental to the company success.<br>A handshake is available upon request.<br><br> -> Go Further and reach the Archive folder for the Next steps.<br><br>May the ghosts of the outside world never catch up with you.<br><br>Final score: ' + score;
     btn.style.display = 'inline-block';
   } else if (gameOver) {
     msg.style.display = 'block';
